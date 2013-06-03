@@ -1,0 +1,19 @@
+.bludder {position: relative;}
+.bludder img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .7s ease-in;
+  border-radius: 6px;
+}
+.bludder .bludder-current {
+  opacity: 1;
+  z-index: 1;
+}
+.bludder .bludder-next {
+  opacity: 1;
+  z-index: 2;
+}
