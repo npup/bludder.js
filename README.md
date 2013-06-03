@@ -32,7 +32,7 @@ First, load `bludder.css` and `bludder.js`.
     b2.stop();
 
     // resume bluddering
-    b2.start();
+    b2.run();
 
     // resume bluddering with specific interval (milliseconds)
-    b2.start(2500);
+    b2.run(2500);

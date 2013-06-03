@@ -34,7 +34,6 @@ var bludder = (function () {
     dom.style.width = instance.options.width;
     dom.style.height = instance.options.height;
     for (var idx=0, len=images.length, img; idx<len; ++idx) {
-
       img = doc.createElement("img");
       idx==instance.currentIdx && (img.className = classes.currentImage);
       img.src = images[idx];
