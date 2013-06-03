@@ -29,7 +29,6 @@ var bludder = (function () {
     return options;
   }
   function buildDOM(instance, images) {
-    console.log(instance, images);
     var dom = domTemplate.cloneNode(true);
     dom.style.width = instance.options.width;
     dom.style.height = instance.options.height;
@@ -37,7 +36,6 @@ var bludder = (function () {
       img = doc.createElement("img");
       idx==instance.currentIdx && (img.className = classes.currentImage);
       img.src = images[idx];
-      console.log("whee: %s", img);
       instance.images.push(img);
       dom.appendChild(img);
     }
@@ -49,7 +47,6 @@ var bludder = (function () {
     instance.minIdx = 0; instance.maxIdx = 0; instance.currentIdx = 0;
     instance.images = [];
     instance.elem = buildDOM(instance, images);
-    console.log(instance.images);
     instance.maxIdx = images.length-1;
     instance.options.container.appendChild(instance.elem);
   }
