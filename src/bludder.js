@@ -13,7 +13,7 @@ var bludder = (function () {
     }
     , domTemplate = (function () {
       var dom = doc.createElement("div");
-      dom.className = "bludder";
+      dom.className = classes.wrapper;
       return dom;
     })();
   function buildOptions(options) {
